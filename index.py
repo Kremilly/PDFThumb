@@ -23,7 +23,7 @@ def generate_pdf_thumbnail(url, page_number=0, size=(300, 400)):
     else:
         return None
 
-@app.route('/', methods=['GET'])
+@app.route('/get', methods=['GET'])
 def generate_thumbnail():
     pdf_url = request.args.get('pdf')
 
