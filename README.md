@@ -1,6 +1,6 @@
 # pdfThumb
 
-Install the dependncies:
+Install the dependencies:
 
 ```shell
 pip install -r requirements.txt
