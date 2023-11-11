@@ -15,7 +15,7 @@ python app.py
 ## Example of request
 
 ```shell
-https://pdf-thumb-a9woh426x-thesilvaemily.vercel.app/?pdf=https://olacesar.com/e-books/biblia.pdf
+https://pdf-thumb-ijp59ght7-thesilvaemily.vercel.app/get?pdf=https://olacesar.com/e-books/biblia.pdf
 ```
 
 ## Dependencies
