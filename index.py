@@ -23,6 +23,16 @@ def generate_pdf_thumbnail(url, page_number=0, size=(300, 400)):
     else:
         return None
 
+def get_default_thumbnail():
+    default_image_url = 'https://i.imgur.com/CvdZqTL.png'
+    response = requests.get(default_image_url)
+
+    if response.status_code == 200:
+        thumbnail_buffer = BytesIO(response.content)
+        return thumbnail_buffer
+    else:
+        return None
+
 @app.route('/get', methods=['GET'])
 def generate_thumbnail():
     pdf_url = request.args.get('pdf')
@@ -33,7 +43,12 @@ def generate_thumbnail():
             thumbnail_buffer.seek(0)
             return send_file(thumbnail_buffer, mimetype='image/png')
         else:
-            return "Error downloading the PDF file", 500
+            default_thumbnail = get_default_thumbnail()
+            if default_thumbnail:
+                default_thumbnail.seek(0)
+                return send_file(default_thumbnail, mimetype='image/png')
+            else:
+                return "Error loading default image", 500
     else:
         return "Parameter 'pdf' missing", 400
 
