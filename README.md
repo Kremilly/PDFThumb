@@ -6,7 +6,7 @@ Install the dependencies:
 pip install -r requirements.txt
 ```
 
-To run the serve, use:
+To run the server, use:
 
 ```shell
 python index.py
