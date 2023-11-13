@@ -9,13 +9,13 @@ pip install -r requirements.txt
 To run the serve, use:
 
 ```shell
-python app.py
+python index.py
 ```
 
 ## Example of request
 
 ```shell
-https://pdf-thumb-ijp59ght7-thesilvaemily.vercel.app/get?pdf=https://olacesar.com/e-books/biblia.pdf
+https://pdf-thumb-eight.vercel.app/get?pdf=https://olacesar.com/e-books/biblia.pdf
 ```
 
 ## Queries Parameters
