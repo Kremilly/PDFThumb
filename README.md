@@ -15,7 +15,7 @@ python index.py
 ## Example of request
 
 ```shell
-https://pdf-thumb-eight.vercel.app/get?pdf=https://olacesar.com/e-books/biblia.pdf
+https://pdf-thumb-eight.vercel.app/get?pdf=YOUR_PDF_URL
 ```
 
 ## Queries Parameters
