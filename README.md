@@ -1,5 +1,11 @@
 # pdfThumb
 
+Clone this respository:
+
+```shell
+git clone https://github.com/AgiosLux/pdfThumb
+```
+
 Install the dependencies:
 
 ```shell
