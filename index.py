@@ -36,9 +36,12 @@ def get_default_thumbnail():
 @app.route('/get', methods=['GET'])
 def generate_thumbnail():
     pdf_url = request.args.get('pdf')
+    width = request.args.get('width') if request.args.get('width') else 300
+    height = request.args.get('height') if request.args.get('height') else 400
+    page_number = request.args.get('page_number') if request.args.get('page_number') else 0
 
     if pdf_url:
-        thumbnail_buffer = generate_pdf_thumbnail(pdf_url)
+        thumbnail_buffer = generate_pdf_thumbnail(pdf_url, page_number=int(page_number), size=(int(width), int(height)))
         if thumbnail_buffer:
             thumbnail_buffer.seek(0)
             return send_file(thumbnail_buffer, mimetype='image/png')
