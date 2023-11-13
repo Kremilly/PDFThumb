@@ -28,5 +28,5 @@ https://pdf-thumb-eight.vercel.app/get?pdf=YOUR_PDF_URL
 
 * Flask
 * PyMuPDF
-* request
+* requests
 * Pillow
