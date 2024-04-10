@@ -3,7 +3,7 @@
 Clone this respository:
 
 ```shell
-git clone https://github.com/AgiosLux/pdfThumb
+git clone https://github.com/kremilly/pdfThumb
 ```
 
 Install the dependencies:
@@ -21,7 +21,7 @@ python index.py
 ## Example of request
 
 ```shell
-https://pdf-thumb-eight.vercel.app/get?pdf=YOUR_PDF_URL
+https://pdfthumb.kremilly.com/get?pdf=YOUR_PDF_URL
 ```
 
 ## Queries Parameters
