@@ -21,7 +21,7 @@ python index.py
 ## Example of request
 
 ```shell
-https://pdfthumb.kremilly.com/get?pdf=YOUR_PDF_URL
+https://api.kremilly.com/pdfthumb?pdf=YOUR_PDF_URL
 ```
 
 ## Queries Parameters
