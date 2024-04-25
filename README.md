@@ -1,22 +1,6 @@
 # pdfThumb
 
-Clone this respository:
-
-```shell
-git clone https://github.com/kremilly/pdfThumb
-```
-
-Install the dependencies:
-
-```shell
-pip install -r requirements.txt
-```
-
-To run the server, use:
-
-```shell
-python index.py
-```
+Generate as PDF Thumbnail for remote document
 
 ## Example of request
 
